@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 export default function Contact() {
   return (
     <section id='contact' className='contact'>
-      <div>Contact Info</div>
+      <h1 className='title'>Contact</h1>
+
       <div>
         <div>
           Email:

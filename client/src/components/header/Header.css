@@ -1,6 +1,7 @@
 .header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100vw;
+  right: 0;
   z-index: 100;
   display: flex;
   flex-shrink: 0;
@@ -22,9 +23,17 @@
 .nav-link-container {
   display: flex;
   align-items: flex-end;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .nav-page-link {
   padding: 0 1.5rem;
 }
+/* 
+.nav-page-link:hover:before {
+  transition: color 0.5s, transform 0.5s;
+}
+
+.nav-page-link:hover:after {
+  transform: translate3d(0px, 2px, 0);
+} */

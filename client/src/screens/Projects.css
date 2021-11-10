@@ -1,12 +1,29 @@
+.projects {
+  background-color: #263a54;
+  color: #f9f8f8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  min-height: fit-content;
+}
+
 .projects-container {
-  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+.project-card {
+  border: solid 2px black;
+  width: 30vw;
+}
+
+.project-title {
+  font-size: x-large;
+}
 .project-img {
   height: 200px;
   object-fit: cover;
-  object-position: left;
-  overflow: hidden;
+  object-position: center;
 }

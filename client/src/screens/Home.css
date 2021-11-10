@@ -1,4 +1,5 @@
 .home {
+  position: relative;
   background-color: #263a54;
   color: #f9f8f8;
   display: flex;
@@ -9,7 +10,8 @@
 .welcome-text {
   font-size: 5rem;
   width: 75%;
-  padding-top: 5rem;
+  padding: 8rem 0 0 3rem;
+  text-align: left;
 }
 
 .welcome-name {
@@ -17,12 +19,13 @@
 }
 
 .welcome-text-span {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .bottom-link {
   position: absolute;
   bottom: 0;
+  padding-bottom: 3rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;

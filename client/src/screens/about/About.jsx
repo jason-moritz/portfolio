@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id='about' className='about'>
       <div className='about-content-container'>
-        <h1 className='title'>About Me</h1>
+        <h1 className='screen-title'>About Me</h1>
         <div className='about-content'>
           From a young age I've loved learning languages. Having lived abroad
           and learning Korean and Japanese, I've turned my passion for languages
@@ -15,8 +15,8 @@ export default function About() {
           success.
         </div>
       </div>
-      <div className='about-bottom-link'>
-        <HashLink smooth to='#projects'>
+      <div className='bottom-link'>
+        <HashLink smooth to='#project1'>
           Projects
           <div>
             <KeyboardArrowDownIcon />

@@ -1,5 +1,4 @@
 import './Contact.css'
-import { Link } from 'react-router-dom'
 
 export default function Contact() {
   return (
@@ -13,6 +12,7 @@ export default function Contact() {
             className='contact-link'
             href='mailto:moritz.jason@gmail.com'
             target='_blank'
+            rel='noreferrer'
           >
             Email
           </a>
@@ -23,6 +23,7 @@ export default function Contact() {
             className='contact-link'
             href='https://www.linkedin.com/in/jason-moritz'
             target='_blank'
+            rel='noreferrer'
           >
             LinkedIn
           </a>
@@ -33,6 +34,7 @@ export default function Contact() {
             className='contact-link'
             href='https://www.github.com/jason-moritz'
             target='_blank'
+            rel='noreferrer'
           >
             Github
           </a>

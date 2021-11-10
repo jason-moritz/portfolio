@@ -11,7 +11,7 @@ export default function Projects() {
       <div className='projects-container'>
         <div className='hubbub'>
           <div className='project-title'>Hubbub</div>
-          <img src={Hubbub} alt='project-preview' />
+          <img src={Hubbub} className='project-img' alt='project-preview' />
           <div className='project-stack'>
             <div className='tech-stack'>Tech Stack</div>
             <ul>
@@ -23,7 +23,7 @@ export default function Projects() {
         </div>
         <div className='jay-walkin'>
           <div className='project-title'>Jay Walkin</div>
-          <img src={JayWalkin} alt='project-preview' />
+          <img src={JayWalkin} className='project-img' alt='project-preview' />
           <div className='project-stack'>
             <div className='tech-stack'>Tech Stack</div>
             <ul>
@@ -37,7 +37,11 @@ export default function Projects() {
         </div>
         <div className='pocket-caddie'>
           <div className='project-title'>Pocket Caddie</div>
-          <img src={PocketCaddie} alt='project-preview' />
+          <img
+            src={PocketCaddie}
+            className='project-img'
+            alt='project-preview'
+          />
           <div className='project-stack'>
             <div className='tech-stack'>Tech Stack</div>
             <ul>
@@ -49,7 +53,7 @@ export default function Projects() {
         </div>
         <div className='jws'>
           <div className='project-title'>JWS</div>
-          <img src={JWS} alt='project-preview' />
+          <img src={JWS} className='project-img' alt='project-preview' />
           <div className='project-description'>description here</div>
           <div className='project-stack'>
             <div className='tech-stack'>Tech Stack</div>

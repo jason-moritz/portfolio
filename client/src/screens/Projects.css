@@ -1,4 +1,12 @@
 .projects-container {
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: left;
+  overflow: hidden;
 }

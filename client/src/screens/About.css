@@ -7,11 +7,21 @@
   align-items: center;
 }
 
-.about-content {
+.about-content-container {
   padding-top: 10rem;
-  font-size: 2rem;
+  padding-left: 5rem;
+  text-align: left;
   width: 75%;
 }
+
+.title {
+  font-size: 3rem;
+}
+
+.about-content {
+  font-size: 2rem;
+}
+
 .about-bottom-link {
   position: absolute;
   bottom: 0;

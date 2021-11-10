@@ -1,0 +1,26 @@
+.about {
+  position: relative;
+  background-color: #f9f8f8;
+  color: #263a54;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  padding-top: 10rem;
+  font-size: 2rem;
+  width: 75%;
+}
+.about-bottom-link {
+  position: absolute;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #d9a966;
+  /* border-bottom: solid 2px #d9a966; */
+  padding: 6px 16px;
+  transition: 400;
+}

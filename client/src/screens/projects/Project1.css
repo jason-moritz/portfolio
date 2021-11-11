@@ -1,0 +1,145 @@
+.project1 {
+  background-color: #263a54;
+  color: #f9f8f8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.project1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.project-half-a,
+.project-half-b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.project-img-container {
+  padding-top: 1rem;
+}
+
+.project-img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border: solid 4px #d9a966;
+  border-radius: 8px;
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-links {
+  width: 90%;
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link,
+.project-link:visited {
+  color: #d9a966;
+}
+
+.project-description {
+  font-size: 1rem;
+}
+
+.project-tech-stack {
+  width: 90%;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.tech-stack-title {
+  text-decoration: underline;
+}
+.tech-stack-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+.list-item span {
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .project1 {
+    padding-top: 6rem;
+  }
+
+  .project1-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .project-half-a,
+  .project-half-b {
+    width: 50%;
+    height: 90%;
+    padding: 0 4rem;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .project-description {
+    font-size: large;
+  }
+
+  .project-links {
+    font-size: x-large;
+    justify-content: center;
+  }
+
+  .project-link {
+    padding: 0 1rem;
+  }
+
+  .tech-stack-title {
+    font-size: x-large;
+  }
+
+  .list-item {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project-description {
+    font-size: x-large;
+  }
+
+  .project-links {
+    font-size: xx-large;
+    justify-content: center;
+  }
+
+  .tech-stack-title {
+    font-size: xx-large;
+  }
+
+  .list-item {
+    font-size: x-large;
+  }
+}

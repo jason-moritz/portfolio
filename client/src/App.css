@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/* * {
+  border: solid 2px black;
+} */

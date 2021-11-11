@@ -8,7 +8,7 @@
 
 _**Portfolio**_ This is my professional portfolio webpage. It is a single page application containing an about me section, list of projects, and contact information.
 
-![Deployed Link](https://www.jason-moritz.com)
+[Deployed Link](https://www.jason-moritz.com)
 
 <br>
 

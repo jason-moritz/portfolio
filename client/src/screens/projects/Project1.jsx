@@ -11,6 +11,15 @@ export default function Projects() {
       <div className='project-container'>
         <div className='project-image-and-links'>
           <img className='project-img' src={Hubbub} alt='project-preview' />
+        </div>
+        <div className='project-info'>
+          <div className='project-title'>Hubbub</div>
+          <h3 className='project-description'>
+            Reddit-style forum website where users can post their thoughts,
+            upload pictures, and comment on other users' posts. This was a solo
+            project that features full user authentication with CRUD privileges
+            utilizing Bcrypt and JSON web tokens.
+          </h3>
           <div className='project-links'>
             <a
               className='project-link'
@@ -29,15 +38,6 @@ export default function Projects() {
               Deployed site
             </a>
           </div>
-        </div>
-        <div className='project-info'>
-          <div className='project-title'>Hubbub</div>
-          <h3 className='project-description'>
-            Reddit-style forum website where users can post their thoughts,
-            upload pictures, and comment on other users' posts. This was a solo
-            project that features full user authentication with CRUD privileges
-            utilizing Bcrypt and JSON web tokens.
-          </h3>
           <h1 className='project-tech-stack'>Made With: </h1>
           <ul>
             <li className='list-item'>

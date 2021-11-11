@@ -8,14 +8,15 @@
 }
 
 .about-content-container {
-  padding-top: 3rem;
-  padding-left: 5rem;
-  text-align: right;
-  width: 75%;
+  padding: 3rem 0 0 1rem;
+  text-align: left;
+  width: 90%;
 }
 
-.screen-title {
-  font-size: 2rem;
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .about-content {

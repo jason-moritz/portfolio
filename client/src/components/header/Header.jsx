@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavHashLink } from 'react-router-hash-link'
+import { NavHashLink, HashLink } from 'react-router-hash-link'
 import HideOnScroll from '../HideOnScroll'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
@@ -17,6 +17,37 @@ export default function Header() {
     setToggle(null)
   }
 
+  const home = (
+    <>
+      <NavHashLink className='nav-link' smooth to='#home'>
+        Home
+      </NavHashLink>
+    </>
+  )
+
+  const about = (
+    <>
+      <NavHashLink className='mobile-nav-link' smooth to='#about'>
+        About
+      </NavHashLink>
+    </>
+  )
+
+  const projects = (
+    <>
+      <NavHashLink className='mobile-nav-link' smooth to='#project1'>
+        Projects
+      </NavHashLink>
+    </>
+  )
+
+  const contact = (
+    <>
+      <NavHashLink className='mobile-nav-link' smooth to='#contact'>
+        Contact
+      </NavHashLink>
+    </>
+  )
   return (
     <>
       <HideOnScroll>
@@ -47,26 +78,26 @@ export default function Header() {
               },
             }}
           >
-            <MenuItem key='link-home'>
-              <NavHashLink className='mobile-nav-link' smooth to='#home'>
+            <NavHashLink className='mobile-nav-link' smooth to='#home'>
+              <MenuItem key='nav-link-home' onClick={handleClose}>
                 Home
-              </NavHashLink>
-            </MenuItem>
-            <MenuItem key='link-about'>
-              <NavHashLink className='mobile-nav-link' smooth to='#about'>
+              </MenuItem>
+            </NavHashLink>
+            <NavHashLink className='mobile-nav-link' smooth to='#about'>
+              <MenuItem key='nav-link-about' onClick={handleClose}>
                 About
-              </NavHashLink>
-            </MenuItem>
-            <MenuItem key='link-project'>
-              <NavHashLink className='mobile-nav-link' smooth to='#project1'>
+              </MenuItem>
+            </NavHashLink>
+            <NavHashLink className='mobile-nav-link' smooth to='#project1'>
+              <MenuItem key='nav-link-project' onClick={handleClose}>
                 Projects
-              </NavHashLink>
-            </MenuItem>
-            <MenuItem key='link-contact'>
-              <NavHashLink className='mobile-nav-link' smooth to='#contact'>
+              </MenuItem>
+            </NavHashLink>
+            <NavHashLink className='mobile-nav-link' smooth to='#contact'>
+              <MenuItem key='nav-link-contact' onClick={handleClose}>
                 Contact
-              </NavHashLink>
-            </MenuItem>
+              </MenuItem>
+            </NavHashLink>
           </Menu>
           <div className='mobile-logo'>Jason Moritz</div>
         </nav>

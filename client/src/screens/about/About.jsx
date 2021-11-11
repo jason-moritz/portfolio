@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section id='about' className='about'>
       <div className='about-content-container'>
-        <h1 className='screen-title'>About Me</h1>
+        <div className='about-title'>About Me</div>
         <div className='about-content'>
           From a young age I've loved learning languages. Having lived abroad
           and learning Korean and Japanese, I've turned my passion for languages

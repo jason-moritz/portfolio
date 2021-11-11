@@ -1,6 +1,8 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import Hubbub from '../../assets/hubbub-thumbnail.png'
 import { HashLink } from 'react-router-hash-link'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 import './Project1.css'
 
 export default function Project1() {
@@ -10,67 +12,60 @@ export default function Project1() {
         <div className='project-half-a'>
           <div className='project-title'>Hubbub</div>
           <div className='project-img-container'>
-            <img className='project-img' src={Hubbub} alt='project-preview' />
+            <img className='project-img-a' src={Hubbub} alt='project-preview' />
+            <div className='project-links'>
+              <a
+                className='project-link'
+                href='https://github.com/jason-moritz/hubbub'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <div title='github link'>
+                  <GitHubIcon
+                    title='github link'
+                    aria-label='github link'
+                    sx={{ fontSize: { xs: 25, sm: 30, md: 40 } }}
+                  />
+                </div>
+              </a>
+              <a
+                className='project-link'
+                href='https://hubbub.netlify.app/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <div title='Deployed site'>
+                  <ExitToAppIcon
+                    title='deployed site'
+                    label='deployed site'
+                    sx={{ fontSize: { xs: 25, sm: 30, md: 40 } }}
+                  />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div className='project-half-b'>
           <div className='project-info'>
-            <h3 className='project-description'>
+            <div className='project-description-title'>Description</div>
+            <div className='project-description'>
               Reddit-style forum website where users can post their thoughts,
               upload pictures, and comment on other users' posts. This was a
               solo project that features full user authentication with CRUD
               privileges utilizing Bcrypt and JSON web tokens.
-            </h3>
-          </div>
-          <div className='project-links'>
-            <a
-              className='project-link'
-              href='https://github.com/jason-moritz/hubbub'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Github
-            </a>
-            <a
-              className='project-link'
-              href='https://hubbub.netlify.app/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Deployed site
-            </a>
+            </div>
           </div>
           <div className='project-tech-stack'>
             <div className='tech-stack-title'>Made With: </div>
             <div className='tech-stack-container'>
-              <ul>
-                <li className='list-item'>
-                  <span>Ruby on Rails</span>
-                </li>
-                <li className='list-item'>
-                  <span>React JS</span>
-                </li>
-                <li className='list-item'>
-                  <span>PostgreSQL</span>
-                </li>
-                <li className='list-item'>
-                  <span>Bcrypt</span>
-                </li>
-              </ul>
-              <ul>
-                <li className='list-item'>
-                  <span>JWT</span>
-                </li>
-                <li className='list-item'>
-                  <span>Material UI</span>
-                </li>
-                <li className='list-item'>
-                  <span>Heroku</span>
-                </li>
-                <li className='list-item'>
-                  <span>Netlify</span>
-                </li>
-              </ul>
+              <div className='list-item-a'>Ruby on Rails</div>
+              <div className='list-item-a'>React JS</div>
+              <div className='list-item-a'>PostgreSQL</div>
+              <div className='list-item-a'>Bcrypt</div>
+              <div className='list-item-a'>JWT</div>
+              <div className='list-item-a'>Material UI</div>
+              <div className='list-item-a'>Heroku</div>
+              <div className='list-item-a'>Netlify</div>
             </div>
           </div>
         </div>

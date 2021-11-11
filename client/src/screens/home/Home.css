@@ -41,8 +41,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  color: #d9a966;
+  font-size: 1.5rem;
+  color: #cac6aa;
 }
 
 @keyframes bounce {

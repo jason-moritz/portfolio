@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div>
         <div>
-          Email:
+          Email: test
           <a
             className='contact-link'
             href='mailto:moritz.jason@gmail.com'

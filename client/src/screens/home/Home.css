@@ -41,8 +41,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #cac6aa;
+  transition: 500ms;
+}
+
+.bottom-link:hover {
+  transform: scale(1.2);
 }
 
 @keyframes bounce {
@@ -74,5 +79,9 @@
 
   .home-link-box {
     padding: 1rem 3rem;
+  }
+
+  .bottom-link {
+    font-size: 1.5rem;
   }
 }

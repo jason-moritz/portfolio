@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { NavHashLink, HashLink } from 'react-router-hash-link'
+import { NavHashLink } from 'react-router-hash-link'
 import HideOnScroll from './HideOnScroll'
 import MobileNav from './MobileNav'
 import './Header.css'

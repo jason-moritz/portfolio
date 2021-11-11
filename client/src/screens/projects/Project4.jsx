@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import JWS from '../../assets/jws-thumbnail.png'
 import { HashLink } from 'react-router-hash-link'

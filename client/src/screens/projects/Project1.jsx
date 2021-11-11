@@ -7,7 +7,7 @@ import './Project1.css'
 export default function Project1() {
   return (
     <section id='project1' className='project1'>
-      <div className='project-container'>
+      <div className='project1-container'>
         <div className='project-half-a'>
           <div className='project-title'>Hubbub</div>
           <div className='project-img-container'>

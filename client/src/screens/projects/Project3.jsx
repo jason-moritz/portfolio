@@ -1,3 +1,3 @@
 export default function Project3() {
-  return <section>project 3</section>
+  return <section id='project3'>project 3</section>
 }

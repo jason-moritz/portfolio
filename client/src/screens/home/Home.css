@@ -23,6 +23,17 @@
   font-size: 2rem;
 }
 
+.home-links-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.home-link-box {
+  padding: 0 2rem;
+}
+
 .bottom-link {
   position: absolute;
   bottom: 0;
@@ -54,5 +65,14 @@
   .welcome-text-secondary {
     margin-top: 3rem;
     font-size: 3rem;
+  }
+
+  .home-links-container {
+    width: 75%;
+    justify-content: flex-start;
+  }
+
+  .home-link-box {
+    padding: 1rem 3rem;
   }
 }

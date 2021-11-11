@@ -28,6 +28,8 @@ export default function Contact() {
               className='contact-link'
               href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
               download
+              target='_blank'
+              rel='noreferrer'
             >
               <PictureAsPdfIcon
                 sx={{ fontSize: { xs: 75, sm: 100, md: 200 } }}

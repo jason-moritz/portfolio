@@ -59,7 +59,9 @@ export default function Header() {
             />
           ) : (
             <>
-              <div className='logo'>Jason Moritz</div>
+              <NavHashLink smooth to='#top'>
+                <div className='logo'>Jason Moritz</div>
+              </NavHashLink>
               <div className='nav-link-container'>
                 {home}
                 {about}

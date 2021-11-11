@@ -65,7 +65,9 @@ export default function MobileNav({ home, about, projects, contact }) {
           </MenuItem>
         </NavHashLink>
       </Menu>
-      <div className='mobile-logo'>Jason Moritz</div>
+      <NavHashLink smooth to='#top'>
+        <div className='mobile-logo'>Jason Moritz</div>
+      </NavHashLink>
     </>
   )
 }

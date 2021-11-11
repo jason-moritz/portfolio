@@ -8,7 +8,7 @@ import Contact from '../screens/contact/Contact'
 
 export default function MainContainer() {
   return (
-    <div className='main-container'>
+    <div id='top' className='main-container'>
       <Home />
       <About />
       <Project1 />

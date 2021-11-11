@@ -24,10 +24,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .title {
-    font-size: 3rem;
+  .about-content-container {
+    width: 60%;
   }
-
+  .about-title {
+    padding-top: 10rem;
+  }
   .about-content {
     font-size: 2rem;
   }

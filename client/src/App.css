@@ -30,6 +30,9 @@ a:visited {
   box-sizing: border-box;
 }
 
+img {
+  pointer-events: none;
+}
 /* * {
   border: solid 2px black;
 } */

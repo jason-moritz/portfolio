@@ -19,12 +19,12 @@ export default function Project3() {
         </div>
         <div className='project-half-b'>
           <div className='project-info'>
-            <h3 className='project-description'>
+            <div className='project-description'>
               On-course golf scorecard and club suggestor (caddie). Users are
               able to add friends and courses, view previous rounds, as well as
               input their yardages and have Pocket Caddie recommend clubs.
               Server built on Airtable.
-            </h3>
+            </div>
           </div>
           <div className='project-links'>
             <a

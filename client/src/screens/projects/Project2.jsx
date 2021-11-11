@@ -19,12 +19,12 @@ export default function Project2() {
         </div>
         <div className='project-half-b'>
           <div className='project-info'>
-            <h3 className='project-description'>
+            <div className='project-description'>
               E-commerce shoe store where users have full CRUD and search
               functionality over inventory. This was a group project that
               features full user authentication with CRUD privileges utilizing
               Bcrypt and JSON web tokens with the MERN stack.
-            </h3>
+            </div>
           </div>
           <div className='project-links'>
             <a

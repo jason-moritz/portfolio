@@ -12,7 +12,7 @@ export default function Project1() {
         <div className='project-half-a'>
           <div className='project-title'>Hubbub</div>
           <div className='project-img-container'>
-            <img className='project-img' src={Hubbub} alt='project-preview' />
+            <img className='project-img-a' src={Hubbub} alt='project-preview' />
             <div className='project-links'>
               <a
                 className='project-link'
@@ -58,14 +58,14 @@ export default function Project1() {
           <div className='project-tech-stack'>
             <div className='tech-stack-title'>Made With: </div>
             <div className='tech-stack-container'>
-              <div className='list-item'>Ruby on Rails</div>
-              <div className='list-item'>React JS</div>
-              <div className='list-item'>PostgreSQL</div>
-              <div className='list-item'>Bcrypt</div>
-              <div className='list-item'>JWT</div>
-              <div className='list-item'>Material UI</div>
-              <div className='list-item'>Heroku</div>
-              <div className='list-item'>Netlify</div>
+              <div className='list-item-a'>Ruby on Rails</div>
+              <div className='list-item-a'>React JS</div>
+              <div className='list-item-a'>PostgreSQL</div>
+              <div className='list-item-a'>Bcrypt</div>
+              <div className='list-item-a'>JWT</div>
+              <div className='list-item-a'>Material UI</div>
+              <div className='list-item-a'>Heroku</div>
+              <div className='list-item-a'>Netlify</div>
             </div>
           </div>
         </div>

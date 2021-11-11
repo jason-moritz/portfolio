@@ -6,9 +6,9 @@
 
 ## Overview
 
-\_**Portfolio** This is my professional portfolio webpage. It is a single page application containing an about me section, list of projects, and contact information.
+_**Portfolio**_ This is my professional portfolio webpage. It is a single page application containing an about me section, list of projects, and contact information.
 
-![Deployed Link]()
+![Deployed Link](https://www.jason-moritz.com)
 
 <br>
 

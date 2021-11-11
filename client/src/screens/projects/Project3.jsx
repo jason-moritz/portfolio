@@ -1,6 +1,8 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import PocketCaddie from '../../assets/pocket-caddie-thumbnail.png'
 import { HashLink } from 'react-router-hash-link'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 import './Project3.css'
 
 export default function Project3() {
@@ -11,20 +13,10 @@ export default function Project3() {
           <div className='project-title'>Pocket Caddie</div>
           <div className='project-img-container'>
             <img
-              className='project-img'
+              className='project-img-a'
               src={PocketCaddie}
               alt='project-preview'
             />
-          </div>
-        </div>
-        <div className='project-half-b'>
-          <div className='project-info'>
-            <div className='project-description'>
-              On-course golf scorecard and club suggestor (caddie). Users are
-              able to add friends and courses, view previous rounds, as well as
-              input their yardages and have Pocket Caddie recommend clubs.
-              Server built on Airtable.
-            </div>
           </div>
           <div className='project-links'>
             <a
@@ -33,7 +25,13 @@ export default function Project3() {
               target='_blank'
               rel='noreferrer'
             >
-              Github
+              <div title='github link'>
+                <GitHubIcon
+                  title='github link'
+                  aria-label='github link'
+                  sx={{ fontSize: { xs: 25, sm: 30, md: 40 } }}
+                />
+              </div>
             </a>
             <a
               className='project-link'
@@ -41,28 +39,33 @@ export default function Project3() {
               target='_blank'
               rel='noreferrer'
             >
-              Deployed site
+              <div title='Deployed site'>
+                <ExitToAppIcon
+                  title='deployed site'
+                  label='deployed site'
+                  sx={{ fontSize: { xs: 25, sm: 30, md: 40 } }}
+                />
+              </div>
             </a>
+          </div>
+        </div>
+        <div className='project-half-b'>
+          <div className='project-info'>
+            <div className='project-description-title'>Description</div>
+            <div className='project-description'>
+              On-course golf scorecard and club suggestor (caddie). Users are
+              able to add friends and courses, view previous rounds, as well as
+              input their yardages and have Pocket Caddie recommend clubs.
+              Server built on Airtable.
+            </div>
           </div>
           <div className='project-tech-stack'>
             <div className='tech-stack-title'>Made With: </div>
             <div className='tech-stack-container'>
-              <ul>
-                <li className='list-item'>
-                  <span>React JS</span>
-                </li>
-                <li className='list-item'>
-                  <span>Airtable</span>
-                </li>
-              </ul>
-              <ul>
-                <li className='list-item'>
-                  <span>Tailwind CSS</span>
-                </li>
-                <li className='list-item'>
-                  <span>Netlify</span>
-                </li>
-              </ul>
+              <div className='list-item-a'>React JS</div>
+              <div className='list-item-a'>Airtable</div>
+              <div className='list-item-a'>Tailwind CSS</div>
+              <div className='list-item-a'>Netlify</div>
             </div>
           </div>
         </div>

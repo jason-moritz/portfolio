@@ -71,6 +71,7 @@
 
 .project-description {
   font-size: 14px;
+  line-height: 1.25rem;
 }
 
 .project-tech-stack {
@@ -106,6 +107,7 @@ div .list-item-a {
 
   .project-description {
     font-size: 18px;
+    line-height: 2rem;
   }
 }
 

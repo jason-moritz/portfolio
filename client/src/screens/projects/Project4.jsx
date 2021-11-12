@@ -49,7 +49,7 @@ export default function Project4() {
           <div className='project-info'>
             <div className='project-description-title'>Description</div>
             <div className='project-description'>
-              Formula 1 historic podium record app. Using a 3rd party api, users
+              Formula 1 historic podium record app. Using a 3rd party API, users
               are able to search for all race results, as well as a list of
               drivers throughout history.
             </div>

@@ -1,5 +1,5 @@
 .project1 {
-  background-color: #263a54;
+  background-color: #1e1e25;
   color: #f9f8f8;
   position: relative;
   display: flex;
@@ -83,7 +83,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 110%;
+  width: 100%;
 }
 
 div .list-item-a {
@@ -95,12 +95,6 @@ div .list-item-a {
 .list-item-a {
   padding: 0.5rem;
   margin: 0.5rem 0.5rem;
-}
-
-@media screen and (min-width: 425px) {
-  .tech-stack-container {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 768px) {

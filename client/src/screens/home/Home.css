@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  background-color: #263a54;
+  background-color: #1e1e25;
   color: #f9f8f8;
   display: flex;
   flex-direction: column;
@@ -19,19 +19,22 @@
 }
 
 .welcome-text-secondary {
-  margin-top: 3rem;
+  padding-top: 3rem;
   font-size: 2rem;
 }
 
 .home-links-container {
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 2rem;
 }
 
 .home-link-box {
   padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom-link {
@@ -42,10 +45,11 @@
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  color: #cac6aa;
+  color: #d9a966;
   transition: 500ms;
 }
 
+/* color: #cac6aa; */
 .bottom-link:hover {
   transform: scale(1.2);
 }
@@ -57,7 +61,7 @@
 
 @media screen and (min-width: 768px) {
   .welcome-text {
-    font-size: 4rem;
+    font-size: 5rem;
     width: 75%;
     padding: 10rem 0 0 1rem;
     text-align: left;
@@ -69,7 +73,7 @@
 
   .welcome-text-secondary {
     margin-top: 3rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .home-links-container {

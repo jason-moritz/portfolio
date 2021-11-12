@@ -24,6 +24,10 @@
   font-size: 1.5rem;
 }
 
+.about-span {
+  color: #d9a966;
+}
+
 @media screen and (min-width: 768px) {
   .about-content-container {
     width: 75%;

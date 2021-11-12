@@ -23,7 +23,7 @@ export default function MobileNav({ home, about, projects, contact }) {
         aria-controls='mobile-nav-menu'
         aria-haspopup='true'
         aria-expanded={open ? 'true' : undefined}
-        sx={{ p: 0, color: '#f9f8f8' }}
+        sx={{ p: 0, m: 0, color: '#f9f8f8' }}
         onClick={handleClick}
       >
         {toggle === null ? (

@@ -1,19 +1,6 @@
-.mobile-header {
-  background-color: #263a54;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 1rem;
-  position: fixed;
-  width: 100vw;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
-
 .mobile-logo {
   color: #cac6aa;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .mobile-nav-link,

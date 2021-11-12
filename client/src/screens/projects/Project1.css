@@ -49,6 +49,11 @@
 
 .project-link {
   padding: 0 1rem;
+  transition: all 500ms ease-in-out;
+}
+
+.project-link:hover {
+  transform: scale(1.2);
 }
 
 .project-link,

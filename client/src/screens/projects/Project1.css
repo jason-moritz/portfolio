@@ -49,6 +49,11 @@
 
 .project-link {
   padding: 0 1rem;
+  transition: all 500ms ease-in-out;
+}
+
+.project-link:hover {
+  transform: scale(1.2);
 }
 
 .project-link,
@@ -71,6 +76,7 @@
 
 .project-description {
   font-size: 14px;
+  line-height: 1.25rem;
 }
 
 .project-tech-stack {
@@ -106,6 +112,7 @@ div .list-item-a {
 
   .project-description {
     font-size: 18px;
+    line-height: 2rem;
   }
 }
 

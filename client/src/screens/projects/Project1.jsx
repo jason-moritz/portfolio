@@ -49,10 +49,9 @@ export default function Project1() {
           <div className='project-info'>
             <div className='project-description-title'>Description</div>
             <div className='project-description'>
-              Reddit-style forum website where users can post their thoughts,
-              upload pictures, and comment on other users' posts. This was a
-              solo project that features full user authentication with CRUD
-              privileges utilizing Bcrypt and JSON web tokens.
+              Reddit-style forum website with user authentication where users
+              can post their thoughts, upload pictures, and comment on other
+              users' posts.
             </div>
           </div>
           <div className='project-tech-stack'>

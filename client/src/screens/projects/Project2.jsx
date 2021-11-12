@@ -53,10 +53,8 @@ export default function Project2() {
           <div className='project-info'>
             <div className='project-description-title'>Description</div>
             <div className='project-description'>
-              E-commerce shoe store where users have full CRUD and search
-              functionality over inventory. This was a group project that
-              features full user authentication with CRUD privileges utilizing
-              Bcrypt and JSON web tokens with the MERN stack.
+              E-commerce shoe store where users can upload, sort, search, and
+              filter through diferent products.
             </div>
           </div>
           <div className='project-tech-stack'>

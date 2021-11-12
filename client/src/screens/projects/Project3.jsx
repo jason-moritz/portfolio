@@ -55,8 +55,7 @@ export default function Project3() {
             <div className='project-description'>
               On-course golf scorecard and club suggestor (caddie). Users are
               able to add friends and courses, view previous rounds, as well as
-              input their yardages and have Pocket Caddie recommend clubs.
-              Server built on Airtable.
+              input their yardages and get club recommendations.
             </div>
           </div>
           <div className='project-tech-stack'>

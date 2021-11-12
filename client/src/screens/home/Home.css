@@ -35,6 +35,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 500ms ease-in-out;
+}
+
+.home-link-box:hover {
+  color: #d9a966;
+  transform: scale(1.2);
 }
 
 .bottom-link {
@@ -46,7 +52,7 @@
   align-items: center;
   font-size: 1rem;
   color: #d9a966;
-  transition: 500ms;
+  transition: all 500ms ease-in-out;
 }
 
 /* color: #cac6aa; */

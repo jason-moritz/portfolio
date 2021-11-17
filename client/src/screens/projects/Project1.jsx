@@ -1,5 +1,5 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-import Hubbub from '../../assets/hubbub-thumbnail.png'
+import Hubbub from '../../assets/hubbub-thumbnail-test.WebP'
 import { HashLink } from 'react-router-hash-link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'

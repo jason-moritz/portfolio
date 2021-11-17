@@ -1,5 +1,5 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-import PocketCaddie from '../../assets/pocket-caddie-thumbnail.png'
+import PocketCaddie from '../../assets/pocket-caddie-thumbnail-test.WebP'
 import { HashLink } from 'react-router-hash-link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'

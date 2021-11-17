@@ -33,7 +33,7 @@
 
 .project-img-a {
   width: 350px;
-  height: auto;
+  height: 163px;
   object-fit: cover;
   object-position: center;
   border: solid 4px #f9f8f8;
@@ -134,7 +134,8 @@ div .list-item-a {
   }
 
   .project-img-a {
-    width: 100%;
+    width: 400px;
+    height: 187px;
   }
 
   .project-description-title,
@@ -155,5 +156,10 @@ div .list-item-a {
 @media screen and (min-width: 1440px) {
   .tech-stack-container {
     width: 80%;
+  }
+
+  .project-img-a {
+    width: 600px;
+    height: 280px;
   }
 }

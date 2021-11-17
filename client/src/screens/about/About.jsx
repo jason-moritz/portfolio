@@ -16,7 +16,7 @@ export default function About() {
           <span className='about-span'>team success</span>.
         </div>
       </div>
-      <div className='bottom-link-b'>
+      <div className='bottom-link'>
         <HashLink smooth to='#project1'>
           Projects
           <div>

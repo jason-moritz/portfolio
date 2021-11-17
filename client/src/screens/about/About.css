@@ -21,14 +21,30 @@
 }
 
 .about-content {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   font-family: sans-serif;
 }
 
 .about-span {
-  color: #d9a966;
+  color: #c86a45;
   font-family: 'Special Elite', cursive;
+}
+
+.bottom-link-b {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #263a54;
+  transition: all 500ms ease-in-out;
+}
+
+.bottom-link-b:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -38,6 +54,11 @@
 
   .about-content {
     line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .bottom-link-b {
+    font-size: 1.5rem;
   }
 }
 

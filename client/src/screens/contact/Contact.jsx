@@ -12,53 +12,53 @@ export default function Contact() {
       <div className='contact-content-container'>
         <div className='contact-title'>Contact Me</div>
         <div className='contact-links-container'>
-          <a
-            className='contact-link'
-            href='mailto:moritz.jason@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <div className='contact-link-box'>
-              <EmailIcon sx={{ fontSize: { xs: 75, sm: 100, md: 100 } }} />
+          <div title='moritz.jason@gmail.com' className='contact-link-box'>
+            <a
+              className='contact-link'
+              href='mailto:moritz.jason@gmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <EmailIcon sx={{ fontSize: { xs: 50, sm: 100, md: 100 } }} />
               <div className='contact-link-title'>Email</div>
-            </div>
-          </a>
-          <a
-            className='contact-link'
-            href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
-            download
-            target='_blank'
-            rel='noreferrer'
-          >
-            <div className='contact-link-box'>
+            </a>
+          </div>
+          <div className='contact-link-box'>
+            <a
+              className='contact-link'
+              href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
+              download
+              target='_blank'
+              rel='noreferrer'
+            >
               <PictureAsPdfIcon
-                sx={{ fontSize: { xs: 75, sm: 100, md: 100 } }}
+                sx={{ fontSize: { xs: 50, sm: 100, md: 100 } }}
               />
               <div className='contact-link-title'>Resume</div>
-            </div>
-          </a>
-          <a
-            className='contact-link'
-            href='https://www.linkedin.com/in/jason-moritz'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <div className='contact-link-box'>
-              <LinkedInIcon sx={{ fontSize: { xs: 75, sm: 100, md: 100 } }} />
+            </a>
+          </div>
+          <div className='contact-link-box'>
+            <a
+              className='contact-link'
+              href='https://www.linkedin.com/in/jason-moritz'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <LinkedInIcon sx={{ fontSize: { xs: 50, sm: 100, md: 100 } }} />
               <div className='contact-link-title'>LinkedIn</div>
-            </div>
-          </a>
-          <a
-            className='contact-link'
-            href='https://www.github.com/jason-moritz'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <div className='contact-link-box'>
-              <GitHubIcon sx={{ fontSize: { xs: 75, sm: 100, md: 100 } }} />
+            </a>
+          </div>
+          <div className='contact-link-box'>
+            <a
+              className='contact-link'
+              href='https://www.github.com/jason-moritz'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <GitHubIcon sx={{ fontSize: { xs: 50, sm: 100, md: 100 } }} />
               <div className='contact-link-title'>Github</div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
       <div className='bottom-link'>

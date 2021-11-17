@@ -23,10 +23,12 @@
 .about-content {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-family: sans-serif;
 }
 
 .about-span {
   color: #d9a966;
+  font-family: 'Special Elite', cursive;
 }
 
 @media screen and (min-width: 768px) {

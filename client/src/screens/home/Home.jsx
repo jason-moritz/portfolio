@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
       <div className='home-links-container'>
-        <div className='home-link-box'>
+        <div title='moritz.jason@gmail.com' className='home-link-box'>
           <a
             className='contact-link'
             href='mailto:moritz.jason@gmail.com'

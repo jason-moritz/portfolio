@@ -2,41 +2,15 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-    <footer>
-      <div>
-        <div>
-          Email: test
-          <a
-            className='contact-link'
-            href='mailto:moritz.jason@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Email
-          </a>
-        </div>
-        <div>
-          LinkedIn:
-          <a
-            className='contact-link'
-            href='https://www.linkedin.com/in/jason-moritz'
-            target='_blank'
-            rel='noreferrer'
-          >
-            LinkedIn
-          </a>
-        </div>
-        <div>
-          Github:
-          <a
-            className='contact-link'
-            href='https://www.github.com/jason-moritz'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Github
-          </a>
-        </div>
+    <footer className='footer'>
+      <div className='footer-left'>
+        <div className='footer-name'>Jason Moritz</div>
+        <div className='footer-email'>moritz.jason@gmail.com</div>
+      </div>
+      <div className='footer-right'>
+        Jason Moritz ©2021. All rights reserved.
+        <br />
+        <span className='footer-span'>May the force be with you.</span>
       </div>
     </footer>
   )

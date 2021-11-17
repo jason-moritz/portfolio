@@ -8,9 +8,9 @@ export default function About() {
       <div className='about-content-container'>
         <div className='about-title'>About Me</div>
         <div className='about-content'>
-          I love <span className='about-span'>learning languages</span>. Having
-          lived abroad and learning Korean and Japanese, I've turned my passion
-          for languages towards programming. I am a{' '}
+          I love <span className='about-span'>learning languages</span>. I have
+          lived abroad, learning Korean and Japanese, and now I've turned my
+          passion for languages towards programming. I am a{' '}
           <span className='about-span'>self-driven problem-solver</span> who
           takes extreme ownership to accomplish tasks, with the focus always on{' '}
           <span className='about-span'>team success</span>.

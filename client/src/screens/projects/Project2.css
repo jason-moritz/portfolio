@@ -33,6 +33,8 @@ div .list-item-b {
 .list-item-b {
   padding: 0.5rem;
   margin: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
 @media screen and (min-width: 1024px) {

@@ -20,6 +20,9 @@ export default function MobileNav({ home, about, projects, contact }) {
     <>
       <Button
         id='hamburger-button'
+        name='main-menu-button'
+        label='main-menu-button'
+        aria-label='main-menu-button'
         aria-controls='mobile-nav-menu'
         aria-haspopup='true'
         aria-expanded={open ? 'true' : undefined}

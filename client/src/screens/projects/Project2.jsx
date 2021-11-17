@@ -1,5 +1,5 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-import JayWalkin from '../../assets/jaywalkin-thumbnail.png'
+import JayWalkin from '../../assets/jaywalkin-thumbnail-test.WebP'
 import { HashLink } from 'react-router-hash-link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'

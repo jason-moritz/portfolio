@@ -17,7 +17,7 @@
 
 .project-img-b {
   width: 350px;
-  height: auto;
+  height: 163px;
   object-fit: cover;
   object-position: center;
   border: solid 4px #263a54;
@@ -46,6 +46,14 @@ div .list-item-b {
   }
 
   .project-img-b {
-    width: 100%;
+    width: 400px;
+    height: 187px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project-img-b {
+    width: 600px;
+    height: 280px;
   }
 }

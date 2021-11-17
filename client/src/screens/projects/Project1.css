@@ -101,7 +101,7 @@ div .list-item-a {
 
 .list-item-a {
   padding: 0.5rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0.25rem 0.25rem;
   font-family: sans-serif;
   text-transform: uppercase;
 }
@@ -116,6 +116,10 @@ div .list-item-a {
   .project-description {
     font-size: 18px;
     line-height: 2rem;
+  }
+
+  .list-item-a {
+    margin: 0.5rem 0.5rem;
   }
 }
 

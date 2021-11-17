@@ -20,7 +20,7 @@ export default function Project2() {
           </div>
           <div className='project-links'>
             <a
-              className='project-link'
+              className='project-link-b'
               href='https://github.com/jason-moritz/jay-walkin'
               target='_blank'
               rel='noreferrer'
@@ -34,7 +34,7 @@ export default function Project2() {
               </div>
             </a>
             <a
-              className='project-link'
+              className='project-link-b'
               href='https://jaywalkin.netlify.app/'
               target='_blank'
               rel='noreferrer'
@@ -74,7 +74,7 @@ export default function Project2() {
           </div>
         </div>
       </div>
-      <div className='bottom-link'>
+      <div className='bottom-link-b'>
         <HashLink smooth to='#project3'>
           More projects
           <div>

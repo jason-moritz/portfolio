@@ -16,7 +16,7 @@ export default function Project4() {
           </div>
           <div className='project-links'>
             <a
-              className='project-link'
+              className='project-link-b'
               href='https://github.com/jason-moritz/JWS'
               target='_blank'
               rel='noreferrer'
@@ -30,7 +30,7 @@ export default function Project4() {
               </div>
             </a>
             <a
-              className='project-link'
+              className='project-link-b'
               href='https://jason-moritz.github.io/JWS/'
               target='_blank'
               rel='noreferrer'
@@ -64,7 +64,7 @@ export default function Project4() {
           </div>
         </div>
       </div>
-      <div className='bottom-link'>
+      <div className='bottom-link-b'>
         <HashLink smooth to='#contact'>
           Contact
           <div>

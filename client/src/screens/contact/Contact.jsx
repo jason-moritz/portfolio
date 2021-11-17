@@ -19,7 +19,7 @@ export default function Contact() {
               target='_blank'
               rel='noreferrer'
             >
-              <EmailIcon sx={{ fontSize: { xs: 50, sm: 75, md: 100 } }} />
+              <EmailIcon sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }} />
               <div className='contact-link-title'>Email</div>
             </a>
           </div>
@@ -32,7 +32,7 @@ export default function Contact() {
               rel='noreferrer'
             >
               <PictureAsPdfIcon
-                sx={{ fontSize: { xs: 50, sm: 75, md: 100 } }}
+                sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }}
               />
               <div className='contact-link-title'>Resume</div>
             </a>
@@ -44,7 +44,7 @@ export default function Contact() {
               target='_blank'
               rel='noreferrer'
             >
-              <LinkedInIcon sx={{ fontSize: { xs: 50, sm: 75, md: 100 } }} />
+              <LinkedInIcon sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }} />
               <div className='contact-link-title'>LinkedIn</div>
             </a>
           </div>
@@ -55,7 +55,7 @@ export default function Contact() {
               target='_blank'
               rel='noreferrer'
             >
-              <GitHubIcon sx={{ fontSize: { xs: 50, sm: 75, md: 100 } }} />
+              <GitHubIcon sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }} />
               <div className='contact-link-title'>Github</div>
             </a>
           </div>

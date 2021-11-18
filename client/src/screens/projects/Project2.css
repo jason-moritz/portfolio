@@ -1,6 +1,6 @@
 .project2 {
-  background-color: #f9f8f8;
-  color: #263a54;
+  background-color: #3b485a;
+  color: #f9f8f8;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
 div .list-item-b {
   font-size: 12px;
   border-radius: 20px;
-  background-color: #cac6aa;
+  background-color: #1e1e25;
 }
 
 .list-item-b {

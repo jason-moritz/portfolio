@@ -11,6 +11,10 @@ export default function Contact() {
     <section id='contact' className='contact'>
       <div className='contact-content-container'>
         <div className='contact-title'>Contact Me</div>
+        <div className='contact-info'>
+          <div className='contact-name'>Jason Moritz</div>
+          <div className='contact-email'>moritz.jason@gmail.com</div>
+        </div>
         <div className='contact-links-container'>
           <div title='moritz.jason@gmail.com' className='contact-link-box'>
             <a
@@ -19,7 +23,7 @@ export default function Contact() {
               target='_blank'
               rel='noreferrer'
             >
-              <EmailIcon sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }} />
+              <EmailIcon sx={{ fontSize: { xs: 40, sm: 60, md: 100 } }} />
               <div className='contact-link-title'>Email</div>
             </a>
           </div>
@@ -32,7 +36,7 @@ export default function Contact() {
               rel='noreferrer'
             >
               <PictureAsPdfIcon
-                sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }}
+                sx={{ fontSize: { xs: 40, sm: 60, md: 100 } }}
               />
               <div className='contact-link-title'>Resume</div>
             </a>
@@ -44,7 +48,7 @@ export default function Contact() {
               target='_blank'
               rel='noreferrer'
             >
-              <LinkedInIcon sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }} />
+              <LinkedInIcon sx={{ fontSize: { xs: 40, sm: 60, md: 100 } }} />
               <div className='contact-link-title'>LinkedIn</div>
             </a>
           </div>
@@ -55,12 +59,19 @@ export default function Contact() {
               target='_blank'
               rel='noreferrer'
             >
-              <GitHubIcon sx={{ fontSize: { xs: 50, sm: 60, md: 100 } }} />
+              <GitHubIcon sx={{ fontSize: { xs: 40, sm: 60, md: 100 } }} />
               <div className='contact-link-title'>Github</div>
             </a>
           </div>
         </div>
       </div>
+      <footer className='footer'>
+        <div className='footer-copyright'>
+          Jason Moritz ©2021. All rights reserved.
+          <br />
+          <span className='footer-span'>May the force be with you.</span>
+        </div>
+      </footer>
       <div className='bottom-link'>
         <HashLink smooth to='#top'>
           Back to top

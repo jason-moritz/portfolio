@@ -18,6 +18,7 @@ export default function Project4() {
             <a
               className='project-link'
               href='https://github.com/jason-moritz/JWS'
+              aria-label='github'
               target='_blank'
               rel='noreferrer'
             >
@@ -32,6 +33,7 @@ export default function Project4() {
             <a
               className='project-link'
               href='https://jason-moritz.github.io/JWS/'
+              aria-label='deployed site'
               target='_blank'
               rel='noreferrer'
             >
@@ -65,7 +67,7 @@ export default function Project4() {
         </div>
       </div>
       <div className='bottom-link'>
-        <HashLink smooth to='#contact'>
+        <HashLink smooth to='#contact' aria-label='contact info'>
           Contact
           <div>
             <KeyboardArrowDownIcon />

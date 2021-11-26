@@ -19,6 +19,7 @@ export default function Home() {
           <a
             className='contact-link'
             href='mailto:moritz.jason@gmail.com'
+            aria-label='email'
             target='_blank'
             rel='noreferrer'
           >
@@ -30,6 +31,7 @@ export default function Home() {
           <a
             className='contact-link'
             href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
+            aria-label='resume'
             download
             target='_blank'
             rel='noreferrer'
@@ -40,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className='bottom-link'>
-        <HashLink smooth to='#about'>
+        <HashLink smooth to='#about' aria-label='about-me-section'>
           About me
           <div>
             <KeyboardArrowDownIcon />

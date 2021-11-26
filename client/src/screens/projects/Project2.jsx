@@ -22,6 +22,7 @@ export default function Project2() {
             <a
               className='project-link'
               href='https://github.com/jason-moritz/jay-walkin'
+              aria-label='github'
               target='_blank'
               rel='noreferrer'
             >
@@ -36,6 +37,7 @@ export default function Project2() {
             <a
               className='project-link'
               href='https://jaywalkin.netlify.app/'
+              aria-label='deployed site'
               target='_blank'
               rel='noreferrer'
             >
@@ -75,7 +77,7 @@ export default function Project2() {
         </div>
       </div>
       <div className='bottom-link'>
-        <HashLink smooth to='#project3'>
+        <HashLink smooth to='#project3' aria-label='project 3'>
           More projects
           <div>
             <KeyboardArrowDownIcon />

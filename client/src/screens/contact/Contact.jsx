@@ -20,6 +20,7 @@ export default function Contact() {
             <a
               className='contact-link'
               href='mailto:moritz.jason@gmail.com'
+              aria-label='email'
               target='_blank'
               rel='noreferrer'
             >
@@ -31,6 +32,7 @@ export default function Contact() {
             <a
               className='contact-link'
               href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
+              aria-label='resume'
               download
               target='_blank'
               rel='noreferrer'
@@ -45,6 +47,7 @@ export default function Contact() {
             <a
               className='contact-link'
               href='https://www.linkedin.com/in/jason-moritz'
+              aria-label='linkedin'
               target='_blank'
               rel='noreferrer'
             >
@@ -56,6 +59,7 @@ export default function Contact() {
             <a
               className='contact-link'
               href='https://www.github.com/jason-moritz'
+              aria-label='github'
               target='_blank'
               rel='noreferrer'
             >
@@ -73,7 +77,7 @@ export default function Contact() {
         </div>
       </footer>
       <div className='bottom-link'>
-        <HashLink smooth to='#top'>
+        <HashLink smooth to='#top' aria-label='back-to-top'>
           Back to top
           <div>
             <KeyboardArrowUpIcon />

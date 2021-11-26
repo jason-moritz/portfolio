@@ -22,6 +22,7 @@ export default function Project3() {
             <a
               className='project-link'
               href='https://github.com/jason-moritz/pocket-caddie'
+              aria-label='github'
               target='_blank'
               rel='noreferrer'
             >
@@ -36,6 +37,7 @@ export default function Project3() {
             <a
               className='project-link'
               href='https://pocket-caddie.netlify.app/'
+              aria-label='deployed site'
               target='_blank'
               rel='noreferrer'
             >
@@ -70,7 +72,7 @@ export default function Project3() {
         </div>
       </div>
       <div className='bottom-link'>
-        <HashLink smooth to='#project4'>
+        <HashLink smooth to='#project4' aria-label='project 4'>
           More projects
           <div>
             <KeyboardArrowDownIcon />

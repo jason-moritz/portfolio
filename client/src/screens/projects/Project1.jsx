@@ -17,13 +17,13 @@ export default function Project1() {
               <a
                 className='project-link'
                 href='https://github.com/jason-moritz/hubbub'
+                aria-label='github'
                 target='_blank'
                 rel='noreferrer'
               >
                 <div title='github link'>
                   <GitHubIcon
                     title='github link'
-                    aria-label='github link'
                     sx={{ fontSize: { xs: 25, sm: 30, md: 40 } }}
                   />
                 </div>
@@ -31,6 +31,7 @@ export default function Project1() {
               <a
                 className='project-link'
                 href='https://hubbub.netlify.app/'
+                aria-label='deployed site'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -70,7 +71,7 @@ export default function Project1() {
         </div>
       </div>
       <div className='bottom-link'>
-        <HashLink smooth to='#project2'>
+        <HashLink smooth to='#project2' aria-label='project2'>
           More projects
           <div>
             <KeyboardArrowDownIcon />

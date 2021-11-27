@@ -16,61 +16,61 @@ export default function Header() {
   }, [])
 
   const home = (
-    <>
+    <li>
       <NavHashLink className='nav-link' smooth to='#home'>
         Home
       </NavHashLink>
-    </>
+    </li>
   )
 
   const about = (
-    <>
+    <li>
       <NavHashLink className='nav-link' smooth to='#about'>
         About
       </NavHashLink>
-    </>
+    </li>
   )
 
   const projects = (
-    <>
+    <li>
       <NavHashLink className='nav-link' smooth to='#project1'>
         Projects
       </NavHashLink>
-    </>
+    </li>
   )
 
   const contact = (
-    <>
+    <li>
       <NavHashLink className='nav-link' smooth to='#contact'>
         Contact
       </NavHashLink>
-    </>
+    </li>
   )
   return (
     <>
       <HideOnScroll>
-        <nav className='header'>
-          {width < breakpoint ? (
-            <MobileNav
-              home={home}
-              about={about}
-              projects={projects}
-              contact={contact}
-            />
-          ) : (
-            <>
-              <NavHashLink smooth to='#top'>
-                <div className='logo'>Jason Moritz</div>
-              </NavHashLink>
-              <div className='nav-link-container'>
-                {home}
-                {about}
-                {projects}
-                {contact}
-              </div>
-            </>
-          )}
-        </nav>
+        <header>
+          <NavHashLink
+            className='logo-link'
+            smooth
+            to='#top'
+            aria-label='scroll back to top of page'
+          >
+            <h1 className='logo'>Jason Moritz</h1>
+          </NavHashLink>
+          <input type='checkbox' id='nav-toggle' className='nav-toggle' />
+          <label for='nav-toggle' className='nav-toggle-label'>
+            <span />
+          </label>
+          <nav>
+            <ul className='nav-links'>
+              {home}
+              {about}
+              {projects}
+              {contact}
+            </ul>
+          </nav>
+        </header>
       </HideOnScroll>
     </>
   )

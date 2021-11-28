@@ -53,8 +53,6 @@
   display: grid;
   justify-self: center;
   font-size: 1rem;
-  /* color: var(--clr-brand); */
-  transition: all 500ms ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {

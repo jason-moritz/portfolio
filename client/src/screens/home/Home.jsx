@@ -13,7 +13,12 @@ export default function Home() {
         </h1>
         <div className='welcome-text-secondary'>
           <h3>I'm a full-stack web developer.</h3>
-          <HashLink smooth to='#contact' aria-label='contact section'>
+          <HashLink
+            className='link'
+            smooth
+            to='#contact'
+            aria-label='contact section'
+          >
             <p>Let's talk &#8702;</p>
           </HashLink>
         </div>
@@ -43,8 +48,13 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className='bottom-link'>
-        <HashLink smooth to='#about' aria-label='about-me-section'>
+      <div className='bottom-link link'>
+        <HashLink
+          className='link'
+          smooth
+          to='#about'
+          aria-label='about-me-section'
+        >
           About me
           <div>
             <KeyboardArrowDownIcon />

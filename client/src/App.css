@@ -15,7 +15,6 @@
   --clr-light-accent: #f9da87;
   --clr-dark: #151515;
   --clr-dark-accent: #373737;
-  /* --clr-brand: #1a9fff; */
   --clr-brand: #58cd36;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -47,12 +46,14 @@ body {
   font-family: var(--ff-primary);
   font-weight: var(--fw-reg);
   background: var(--clr-dark);
+  color: var(--clr-light);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
 section {
   height: 100vh;
+  min-height: fit-content;
 }
 
 .--brand {
@@ -68,13 +69,18 @@ a {
   color: inherit;
 }
 
-*a:hover,
-*a:focus {
-  color: var(--clr-brand);
-}
-
 a:visited {
   color: inherit;
+}
+
+.link {
+  transition: color 150ms ease-in-out;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--clr-brand);
+  transition: color 150ms ease-in-out;
 }
 
 img {

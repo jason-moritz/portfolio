@@ -5,18 +5,30 @@ import './About.css'
 export default function About() {
   return (
     <section id='about' className='about'>
-      <div className='about-content-container'>
-        <div className='about-title'>About Me</div>
+      <div className='about-container'>
+        <h1 className='about-title --accent'>About Me</h1>
         <div className='about-content'>
-          My <span className='about-span'>passion for language </span>developed
-          while living abroad where I learned both Korean and Japanese. Drawing
-          on that passion, I now channel that focus towards programming. I am a{' '}
-          <span className='about-span'>self-driven problem-solver</span> who
-          takes extreme ownership to accomplish tasks, with the focus always on{' '}
-          <span className='about-span'>team success</span>.
+          <h3 className='about-subtitle --accent'>passion for language </h3>
+          <p>
+            developed while living abroad where I learned both Korean and
+            Japanese. I now channel that focus towards programming, mainly with
+            React JS, JavaScript, and Ruby on Rails.
+          </p>
+          <h3 className='about-subtitle --accent'>
+            self-driven problem-solver
+          </h3>
+          <p>
+            I absolutely love algos and coding puzzles. Whatever the challenge,
+            I take extreme ownership to accomplish tasks.
+          </p>
+          <h3 className='about-subtitle --accent'>team success</h3>
+          <p>
+            Teamwork makes the dream work! Experienced with Gitflow, slack and
+            other workflow tools.
+          </p>
         </div>
       </div>
-      <div className='bottom-link'>
+      <div className='bottom-link link'>
         <HashLink smooth to='#project1'>
           Projects
           <div>

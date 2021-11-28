@@ -1,3 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: 'Rubik', sans-serif;
+  --ff-secondary: 'Lato', monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-light-accent: #f9da87;
+  --clr-dark: #151515;
+  --clr-dark-accent: #373737;
+  /* --clr-brand: #1a9fff; */
+  --clr-brand: #58cd36;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
 .App {
   text-align: center;
 }
@@ -5,15 +38,29 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  line-height: 1.6;
 }
 
 body {
   margin: 0 auto;
-  font-family: 'Special Elite', cursive;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-reg);
+  background: var(--clr-dark);
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 section {
   height: 100vh;
+}
+
+.--brand {
+  color: var(--clr-brand);
+}
+
+.--accent {
+  color: var(--clr-light-accent);
 }
 
 a {
@@ -21,19 +68,36 @@ a {
   color: inherit;
 }
 
+*a:hover,
+*a:focus {
+  color: var(--clr-brand);
+}
+
 a:visited {
   color: inherit;
 }
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
-
 img {
   pointer-events: none;
+  display: block;
+  max-width: 100%;
 }
-/* * {
-  border: solid 2px black;
-} */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}

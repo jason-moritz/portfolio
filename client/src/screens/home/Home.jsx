@@ -8,36 +8,38 @@ export default function Home() {
   return (
     <section id='home' className='home'>
       <div className='welcome-text'>
-        Hello, I'm <span className='welcome-name'>Jason.</span>
-        <br />
+        <h1>
+          Hello, I'm <span className='welcome-name --accent'>Jason.</span>
+        </h1>
         <div className='welcome-text-secondary'>
-          I'm a full-stack web developer.
+          <h3>I'm a full-stack web developer.</h3>
+          <HashLink smooth to='#contact' aria-label='contact section'>
+            <p>Let's talk &#8702;</p>
+          </HashLink>
         </div>
       </div>
       <div className='home-links-container'>
         <div title='moritz.jason@gmail.com' className='home-link-box'>
           <a
-            className='contact-link'
             href='mailto:moritz.jason@gmail.com'
             aria-label='email'
             target='_blank'
             rel='noreferrer'
           >
-            <EmailIcon sx={{ fontSize: { xs: 30, sm: 50, md: 75 } }} />
-            <div className='contact-link-title'>Email</div>
+            <EmailIcon sx={{ fontSize: { xs: 50, md: 90 } }} />
+            <h3>Email</h3>
           </a>
         </div>
         <div className='home-link-box'>
           <a
-            className='contact-link'
             href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
             aria-label='resume'
             download
             target='_blank'
             rel='noreferrer'
           >
-            <PictureAsPdfIcon sx={{ fontSize: { xs: 30, sm: 50, md: 75 } }} />
-            <div className='contact-link-title'>Resume</div>
+            <PictureAsPdfIcon sx={{ fontSize: { xs: 50, md: 90 } }} />
+            <h3>Resume</h3>
           </a>
         </div>
       </div>

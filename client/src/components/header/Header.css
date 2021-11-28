@@ -3,12 +3,17 @@ header {
   width: 100%;
   z-index: 999;
   text-align: center;
-  background-color: #1e1e25;
-  color: #f9f8f8;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding-block: 2em;
+  border-bottom: 2px solid var(--clr-dark-accent);
 }
 
 .logo {
-  font-family: sans-serif;
+  font-family: var(--ff-secondary);
+  text-align: right;
+  margin-right: 1em;
+  transition: ;
 }
 
 .nav-toggle {
@@ -57,7 +62,7 @@ header {
 
 nav {
   position: absolute;
-  background: grey;
+  background: var(--clr-dark-accent);
   width: 100%;
   top: 100%;
   left: 0;
@@ -74,7 +79,7 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid #575766;
+  border-bottom: 1px solid #57576675;
 }
 
 nav li:last-child {
@@ -82,20 +87,19 @@ nav li:last-child {
 }
 
 nav a {
-  color: #f9f8f8;
   display: block;
   padding: 2em 6em;
   text-decoration: none;
   font-size: 1.2rem;
-  text-transform: uppercase;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
-nav a:hover,
-nav a:focus {
-  color: #000;
+header a:hover,
+header a:focus {
+  color: var(--clr-brand);
   font-weight: 500;
+  transition: all 300ms ease-in-out;
 }
 
 .nav-toggle:checked ~ nav {
@@ -135,6 +139,10 @@ nav a:focus {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
+  .logo {
+    margin: 0;
+  }
+
   .logo-link {
     grid-column: 2 / 3;
     align-self: center;
@@ -142,7 +150,6 @@ nav a:focus {
 
   nav {
     all: unset;
-    font-family: sans-serif;
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -163,22 +170,16 @@ nav a:focus {
   nav a {
     opacity: 1;
     position: relative;
-    padding: 2em 0;
-  }
-
-  nav a:hover,
-  nav a:focus {
-    color: green;
-    font-weight: 500;
+    padding: 0;
   }
 
   nav a::before {
     content: '';
     height: 5px;
     display: block;
-    background: white;
+    background: var(--clr-brand);
     position: absolute;
-    top: 1em;
+    top: -0.5em;
     left: 0;
     right: 0;
     transform: scale(0, 1);

@@ -1,23 +1,29 @@
 import { useState, useEffect } from 'react'
 import { NavHashLink } from 'react-router-hash-link'
 import HideOnScroll from './HideOnScroll'
-import MobileNav from './MobileNav'
 import './Header.css'
 
 export default function Header() {
-  const [width, setWidth] = useState(window.innerWidth)
-
-  const breakpoint = 768
+  // const [width, setWidth] = useState(window.innerWidth)
+  const [open, setOpen] = useState(false)
+  const [disable, setDisable] = useState(false)
+  const breakpoint = 1024
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener('resize', handleWindowResize)
-    return () => window.removeEventListener('resize', handleWindowResize)
+    // const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', () => {
+      return window.innerWidth >= breakpoint && open ? setOpen(false) : null
+    })
+    // return () => window.removeEventListener('resize', handleWindowResize)
   }, [])
+
+  const handleClick = () => {
+    setOpen(prevState => (prevState = !prevState))
+  }
 
   const home = (
     <li>
-      <NavHashLink className='nav-link' smooth to='#home'>
+      <NavHashLink smooth to='#home'>
         Home
       </NavHashLink>
     </li>
@@ -25,7 +31,7 @@ export default function Header() {
 
   const about = (
     <li>
-      <NavHashLink className='nav-link' smooth to='#about'>
+      <NavHashLink smooth to='#about'>
         About
       </NavHashLink>
     </li>
@@ -33,7 +39,7 @@ export default function Header() {
 
   const projects = (
     <li>
-      <NavHashLink className='nav-link' smooth to='#project1'>
+      <NavHashLink smooth to='#project1'>
         Projects
       </NavHashLink>
     </li>
@@ -41,11 +47,12 @@ export default function Header() {
 
   const contact = (
     <li>
-      <NavHashLink className='nav-link' smooth to='#contact'>
+      <NavHashLink smooth to='#contact'>
         Contact
       </NavHashLink>
     </li>
   )
+
   return (
     <>
       <HideOnScroll>
@@ -56,14 +63,20 @@ export default function Header() {
             to='#top'
             aria-label='scroll back to top of page'
           >
-            <h1 className='logo'>Jason Moritz</h1>
+            <h3 className='logo'>Jason Moritz</h3>
           </NavHashLink>
-          <input type='checkbox' id='nav-toggle' className='nav-toggle' />
+          <input
+            type='checkbox'
+            id='nav-toggle'
+            checked={open}
+            className='nav-toggle'
+            onClick={handleClick}
+          />
           <label for='nav-toggle' className='nav-toggle-label'>
             <span />
           </label>
           <nav>
-            <ul className='nav-links'>
+            <ul className='nav-links' onClick={handleClick}>
               {home}
               {about}
               {projects}

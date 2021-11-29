@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id='about' className='about'>
       <div className='about-container'>
-        <h1 className='about-title --accent'>About Me</h1>
+        <h2 className='about-title --accent'>About Me</h2>
         <div className='about-content'>
           <h3 className='about-subtitle --accent'>passion for language </h3>
           <p>

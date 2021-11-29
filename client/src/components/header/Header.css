@@ -3,6 +3,7 @@ header {
   width: 100%;
   z-index: 999;
   text-align: center;
+  background-color: var(--clr-dark);
   padding-block: 2em;
   border-bottom: 2px solid var(--clr-dark-accent);
 }
@@ -90,13 +91,6 @@ nav a {
   font-size: 1.2rem;
   opacity: 0;
   transition: all 150ms ease-in-out;
-}
-
-header a:hover,
-header a:focus {
-  color: var(--clr-brand);
-  font-weight: 500;
-  transition: all 300ms ease-in-out;
 }
 
 .nav-toggle:checked ~ nav {

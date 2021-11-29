@@ -23,7 +23,7 @@ export default function Project(props) {
     <section key={id} id={id} className='project'>
       <div className='project1-container'>
         <div className='project-half-a'>
-          <h1 className='project-title'>{title}</h1>
+          <h2 className='project-title'>{title}</h2>
           <div className='project-img-container'>
             <img
               className='project-img-a'

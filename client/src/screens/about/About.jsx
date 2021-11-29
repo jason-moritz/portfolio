@@ -1,5 +1,6 @@
 import { HashLink } from 'react-router-hash-link'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import LocalScroll from '../../components/scroll/LocalScroll'
 import './About.css'
 
 export default function About() {
@@ -26,14 +27,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className='bottom-link link'>
-        <HashLink smooth to='#project1'>
-          Projects
-          <div>
-            <KeyboardArrowDownIcon />
-          </div>
-        </HashLink>
-      </div>
+      <LocalScroll link={'project1'} next={'projects'} />
     </section>
   )
 }

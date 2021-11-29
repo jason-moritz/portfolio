@@ -1,8 +1,8 @@
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-import Hubbub from '../../assets/hubbub-thumbnail-test.WebP'
 import { HashLink } from 'react-router-hash-link'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'
+import LocalScroll from '../../components/scroll/LocalScroll'
 import './Project.css'
 
 export default function Project(props) {
@@ -20,7 +20,7 @@ export default function Project(props) {
   } = props
 
   return (
-    <section id={id} className='project'>
+    <section key={id} id={id} className='project'>
       <div className='project1-container'>
         <div className='project-half-a'>
           <h1 className='project-title'>{title}</h1>
@@ -28,6 +28,7 @@ export default function Project(props) {
             <img
               className='project-img-a'
               src={preview}
+              loading='lazy'
               alt='project-preview'
             />
             <div className='project-links'>
@@ -86,14 +87,7 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-      <div className='bottom-link'>
-        <HashLink smooth to={`#${link}`} aria-label={link}>
-          {next}
-          <div>
-            <KeyboardArrowDownIcon />
-          </div>
-        </HashLink>
-      </div>
+      <LocalScroll link={link} next={next} />
     </section>
   )
 }

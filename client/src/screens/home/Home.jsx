@@ -1,8 +1,8 @@
-import './Home.css'
 import { HashLink } from 'react-router-hash-link'
 import EmailIcon from '@mui/icons-material/Email'
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import LocalScroll from '../../components/scroll/LocalScroll'
+import './Home.css'
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
             rel='noreferrer'
           >
             <EmailIcon sx={{ fontSize: { xs: 50, md: 90 } }} />
-            <h3>Email</h3>
+            <p>Email</p>
           </a>
         </div>
         <div className='home-link-box'>
@@ -44,23 +44,11 @@ export default function Home() {
             rel='noreferrer'
           >
             <PictureAsPdfIcon sx={{ fontSize: { xs: 50, md: 90 } }} />
-            <h3>Resume</h3>
+            <p>Resume</p>
           </a>
         </div>
       </div>
-      <div className='bottom-link link'>
-        <HashLink
-          className='link'
-          smooth
-          to='#about'
-          aria-label='about-me-section'
-        >
-          About me
-          <div>
-            <KeyboardArrowDownIcon />
-          </div>
-        </HashLink>
-      </div>
+      <LocalScroll link={'about'} next={'about me'} />
     </section>
   )
 }

@@ -4,16 +4,17 @@ import EmailIcon from '@mui/icons-material/Email'
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import LocalScroll from '../../components/scroll/LocalScroll'
 import './Contact.css'
 
 export default function Contact() {
   return (
     <section id='contact' className='contact'>
       <div className='contact-content-container'>
-        <div className='contact-title'>Contact Me</div>
+        <h1 className='contact-title'>Contact Me</h1>
         <div className='contact-info'>
-          <div className='contact-name'>Jason Moritz</div>
-          <div className='contact-email'>moritz.jason@gmail.com</div>
+          <h3 className='contact-name'>Jason Moritz</h3>
+          <p className='contact-email'>moritz.jason@gmail.com</p>
         </div>
         <div className='contact-links-container'>
           <div title='moritz.jason@gmail.com' className='contact-link-box'>
@@ -76,14 +77,7 @@ export default function Contact() {
           <span className='footer-span'>May the force be with you.</span>
         </div>
       </footer>
-      <div className='bottom-link'>
-        <HashLink smooth to='#top' aria-label='back-to-top'>
-          Back to top
-          <div>
-            <KeyboardArrowUpIcon />
-          </div>
-        </HashLink>
-      </div>
+      <LocalScroll link={'top'} next={'back to top'} />
     </section>
   )
 }

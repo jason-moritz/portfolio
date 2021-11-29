@@ -1,6 +1,6 @@
 import Home from '../screens/home/Home'
 import About from '../screens/about/About'
-import Project from '../screens/projects/Project'
+import Project from '../screens/project/Project'
 import Contact from '../screens/contact/Contact'
 import { projectsArray } from '../utils/projects'
 
@@ -25,9 +25,6 @@ export default function MainContainer() {
           />
         )
       })}
-      {/* <Project2 />
-      <Project3 />
-      <Project4 /> */}
       <Contact />
     </div>
   )

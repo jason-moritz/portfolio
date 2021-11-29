@@ -73,7 +73,10 @@ export default function Contact() {
           Jason Moritz ©2021. All rights reserved.
           <br />
           <br />
-          <span className='footer-span --brand'>
+          <span
+            className='footer-span --brand'
+            data-content='May the force be with you.'
+          >
             May the force be with you.
           </span>
         </p>

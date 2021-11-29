@@ -53,7 +53,7 @@ body {
 }
 
 section {
-  height: max(100vh, 750px);
+  height: max(100vh, 640px);
 }
 
 .--brand {

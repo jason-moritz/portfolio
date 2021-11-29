@@ -65,9 +65,10 @@
 }
 
 .tech-stack-container > .list-item {
+  text-align: center;
   border-radius: 20px;
   background-color: var(--clr-dark-accent);
-  padding: 0.5em;
+  padding: 0.25em;
   margin: 0.25em 0.25em;
 }
 
@@ -102,12 +103,12 @@
   }
 
   .project-info {
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
   }
-
+  /* 
   .tech-stack-container {
     width: 120%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {

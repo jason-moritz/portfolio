@@ -1,5 +1,3 @@
-import { HashLink } from 'react-router-hash-link'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 import LocalScroll from '../../components/scroll/LocalScroll'
@@ -20,7 +18,7 @@ export default function Project(props) {
   } = props
 
   return (
-    <section key={id} id={id} className='project'>
+    <section id={id} className='project'>
       <div className='project1-container'>
         <div className='project-half-a'>
           <h2 className='project-title'>{title}</h2>

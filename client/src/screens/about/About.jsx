@@ -1,5 +1,3 @@
-import { HashLink } from 'react-router-hash-link'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import LocalScroll from '../../components/scroll/LocalScroll'
 import './About.css'
 

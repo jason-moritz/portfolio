@@ -49,14 +49,6 @@
   transform: scale(1.05);
 }
 
-.bottom-link {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 0.5rem;
-  display: grid;
-  justify-self: center;
-}
-
 @media screen and (min-width: 1024px) {
   .home {
     display: grid;

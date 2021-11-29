@@ -13,10 +13,8 @@
 
   --clr-light: #fff;
   --clr-light-accent: #f9da87;
-  /* --clr-dark: #151515; */
   --clr-dark: #1e1e25;
   --clr-dark-accent: #373737;
-  /* --clr-brand: #58cd36; */
   --clr-brand: #74c947;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -32,6 +30,7 @@
     --fs-body: 1.125rem;
   }
 }
+
 .App {
   text-align: center;
 }
@@ -55,7 +54,7 @@ body {
 
 section {
   height: 100vh;
-  min-height: fit-content;
+  min-height: 725px;
 }
 
 .--brand {
@@ -69,20 +68,17 @@ section {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 400ms ease-in-out;
 }
 
 a:visited {
   color: inherit;
 }
 
-.link {
-  transition: color 150ms ease-in-out;
-}
-
-.link:hover,
-.link:focus {
+a:hover,
+a:focus {
   color: var(--clr-brand);
-  transition: color 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 img {

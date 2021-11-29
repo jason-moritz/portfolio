@@ -10,10 +10,10 @@ import './Contact.css'
 export default function Contact() {
   return (
     <section id='contact' className='contact'>
+      <h2 className='contact-title'>Contact</h2>
       <div className='contact-content-container'>
-        <h1 className='contact-title'>Contact Me</h1>
         <div className='contact-info'>
-          <h3 className='contact-name'>Jason Moritz</h3>
+          <h3 className='contact-name --accent'>Jason Moritz</h3>
           <p className='contact-email'>moritz.jason@gmail.com</p>
         </div>
         <div className='contact-links-container'>
@@ -71,11 +71,14 @@ export default function Contact() {
         </div>
       </div>
       <footer className='footer'>
-        <div className='footer-copyright'>
+        <p className='footer-copyright'>
           Jason Moritz ©2021. All rights reserved.
           <br />
-          <span className='footer-span'>May the force be with you.</span>
-        </div>
+          <br />
+          <span className='footer-span --brand'>
+            May the force be with you.
+          </span>
+        </p>
       </footer>
       <LocalScroll link={'top'} next={'back to top'} />
     </section>

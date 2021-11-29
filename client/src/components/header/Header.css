@@ -3,8 +3,6 @@ header {
   width: 100%;
   z-index: 999;
   text-align: center;
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
   padding-block: 2em;
   border-bottom: 2px solid var(--clr-dark-accent);
 }
@@ -13,7 +11,6 @@ header {
   font-family: var(--ff-secondary);
   text-align: right;
   margin-right: 1em;
-  transition: ;
 }
 
 .nav-toggle {

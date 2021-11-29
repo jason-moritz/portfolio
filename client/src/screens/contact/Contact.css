@@ -28,7 +28,23 @@
 }
 
 .footer-span {
+  position: relative;
   font-family: 'Special Elite', cursive;
+}
+
+.footer-span::before {
+  position: absolute;
+  content: attr(data-content);
+  top: -5px;
+  left: 0px;
+  color: hsl(4, 90%, 38%);
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: all 600ms ease-in-out 400ms;
+}
+
+.footer-span:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: all 200ms ease-in-out;
 }
 
 @media screen and (min-width: 600px) {
@@ -71,11 +87,12 @@
     margin: 0 1rem 0 1rem;
     border: solid 2px var(--clr-light);
     border-radius: 8px;
-    transition: 400ms all ease-in-out;
+    transition: all 150ms ease-in-out;
   }
 
   .contact-link-box:hover {
     border-color: var(--clr-brand);
-    transition: 150ms all ease-in-out;
+    transition: all 150ms ease-in-out;
+    color: var(--clr-brand);
   }
 }

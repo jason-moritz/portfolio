@@ -1,6 +1,6 @@
 .bottom-link {
   position: absolute;
-  bottom: min(1.5em, 30px);
+  bottom: min(1.5em, 10px);
   display: grid;
   justify-self: center;
 }

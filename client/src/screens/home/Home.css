@@ -60,7 +60,7 @@
 @media screen and (min-width: 1024px) {
   .home {
     display: grid;
-    grid-template-columns: 1fr minmax(300px, 3fr) minmax(300px, 3fr) 1fr;
+    grid-template-columns: 1fr minmax(400px, 3fr) minmax(400px, 2fr) 1fr;
     perspective: 40rem;
     overflow-x: hidden;
     padding-top: 0;

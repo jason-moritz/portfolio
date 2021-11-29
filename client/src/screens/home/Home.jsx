@@ -9,7 +9,7 @@ export default function Home() {
     <section id='home' className='home'>
       <div className='welcome-text'>
         <h1>
-          Hello, I'm <span className='welcome-name --accent'>Jason.</span>
+          Hi, I'm <span className='welcome-name --accent'>Jason.</span>
         </h1>
         <div className='welcome-text-secondary'>
           <h3>I'm a full-stack web developer.</h3>

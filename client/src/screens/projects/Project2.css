@@ -1,6 +1,4 @@
 .project2 {
-  background-color: #3b485a;
-  color: #f9f8f8;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -31,11 +29,6 @@
 
 .project-link-b:hover {
   transform: scale(1.2);
-}
-
-.project-link-b,
-.project-link-b:visited {
-  color: #c86a45;
 }
 
 div .list-item-b {

@@ -3,20 +3,37 @@ import Hubbub from '../../assets/hubbub-thumbnail-test.WebP'
 import { HashLink } from 'react-router-hash-link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp'
-import './Project1.css'
+import './Project.css'
 
-export default function Project1() {
+export default function Project(props) {
+  const {
+    id,
+    title,
+    preview,
+    github,
+    deployed,
+    group,
+    description,
+    stack,
+    link,
+    next,
+  } = props
+
   return (
-    <section id='project1' className='project1'>
+    <section id={id} className='project'>
       <div className='project1-container'>
         <div className='project-half-a'>
-          <div className='project-title'>Hubbub</div>
+          <h1 className='project-title'>{title}</h1>
           <div className='project-img-container'>
-            <img className='project-img-a' src={Hubbub} alt='project-preview' />
+            <img
+              className='project-img-a'
+              src={preview}
+              alt='project-preview'
+            />
             <div className='project-links'>
               <a
-                className='project-link'
-                href='https://github.com/jason-moritz/hubbub'
+                className='link'
+                href={github}
                 aria-label='github'
                 target='_blank'
                 rel='noreferrer'
@@ -29,8 +46,8 @@ export default function Project1() {
                 </div>
               </a>
               <a
-                className='project-link'
-                href='https://hubbub.netlify.app/'
+                className='link'
+                href={deployed}
                 aria-label='deployed site'
                 target='_blank'
                 rel='noreferrer'
@@ -48,31 +65,30 @@ export default function Project1() {
         </div>
         <div className='project-half-b'>
           <div className='project-info'>
-            <div className='project-description-title'>Description</div>
-            <div className='project-description'>
-              Reddit-style forum website with user authentication where users
-              can post their thoughts, upload pictures, and comment on other
-              users' posts.
-            </div>
+            <h3 className='project-description-title'>Description</h3>
+            <p className='project-description'>
+              <span className='--accent'>{group}</span>
+              <br />
+              {description}
+            </p>
           </div>
           <div className='project-tech-stack'>
-            <div className='tech-stack-title'>Made With: </div>
+            <h3 className='tech-stack-title'>Made With</h3>
             <div className='tech-stack-container'>
-              <div className='list-item-a'>Ruby on Rails</div>
-              <div className='list-item-a'>React JS</div>
-              <div className='list-item-a'>PostgreSQL</div>
-              <div className='list-item-a'>Bcrypt</div>
-              <div className='list-item-a'>JWT</div>
-              <div className='list-item-a'>Material UI</div>
-              <div className='list-item-a'>Heroku</div>
-              <div className='list-item-a'>Netlify</div>
+              {stack.map((tech, index) => {
+                return (
+                  <p key={index} className='list-item'>
+                    {tech}
+                  </p>
+                )
+              })}
             </div>
           </div>
         </div>
       </div>
       <div className='bottom-link'>
-        <HashLink smooth to='#project2' aria-label='project2'>
-          More projects
+        <HashLink smooth to={`#${link}`} aria-label={link}>
+          {next}
           <div>
             <KeyboardArrowDownIcon />
           </div>

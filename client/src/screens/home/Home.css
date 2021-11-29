@@ -25,14 +25,17 @@
   padding-top: 3rem;
 }
 
+.welcome-text-secondary > a {
+  font-family: var(--ff-secondary);
+}
 .home-links-container {
   display: flex;
   justify-content: flex-start;
   padding-top: 2rem;
-  font-family: var(--ff-secondary);
 }
 
 .home-link-box {
+  font-family: var(--ff-secondary);
   padding: 0 2rem;
   display: flex;
   justify-content: center;
@@ -52,7 +55,6 @@
   padding-bottom: 0.5rem;
   display: grid;
   justify-self: center;
-  font-size: 1rem;
 }
 
 @media screen and (min-width: 1024px) {

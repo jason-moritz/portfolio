@@ -76,7 +76,7 @@ export default function Project2() {
           </div>
         </div>
       </div>
-      <div className='bottom-link'>
+      <div className='bottom-link link'>
         <HashLink smooth to='#project3' aria-label='project 3'>
           More projects
           <div>

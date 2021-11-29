@@ -14,9 +14,7 @@ export default function About() {
             Japanese. I now channel that focus towards programming, mainly with
             React JS, JavaScript, and Ruby on Rails.
           </p>
-          <h3 className='about-subtitle --accent'>
-            self-driven problem-solver
-          </h3>
+          <h3 className='about-subtitle --accent'>problem-solver</h3>
           <p>
             I absolutely love algos and coding puzzles. Whatever the challenge,
             I take extreme ownership to accomplish tasks.

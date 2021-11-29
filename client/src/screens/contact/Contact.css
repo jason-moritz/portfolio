@@ -4,8 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1e1e25;
-  color: #f9f8f8;
   padding-bottom: 1rem;
 }
 
@@ -14,56 +12,19 @@
   width: 90%;
 }
 
-.contact-title {
-  font-size: 3rem;
-  font-weight: bold;
-  padding-bottom: 1rem;
-}
-
 .contact-info {
-  padding: 1rem 0;
-}
-
-.contact-name {
-  font-size: xx-large;
-  color: #d9a966;
-}
-
-.contact-email {
-  font-size: large;
-  font-family: sans-serif;
-}
-
-.contact-links-container {
-  padding-bottom: 1rem;
+  margin: 1em 0;
 }
 
 .contact-link-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 0;
-}
-
-.contact-link-title {
-  font-size: 1.25rem;
-}
-
-.contact-link {
-  transition: all 500ms ease-in-out;
-}
-
-.contact-link:hover {
-  color: #d9a966;
-  transform: scale(1.1);
+  margin: 0.5em 0;
 }
 
 .footer {
   padding-bottom: 1.5rem;
-}
-
-.footer-copyright {
-  font-family: sans-serif;
 }
 
 .footer-span {
@@ -73,13 +34,11 @@
 @media screen and (min-width: 600px) {
   .contact-title {
     position: absolute;
-    top: 8rem;
-    left: 3rem;
-    right: 3rem;
+    top: min(2em, 4rem);
   }
 
   .contact-info {
-    padding-top: 3rem;
+    margin-top: -3rem;
   }
 
   .contact-links-container {
@@ -101,10 +60,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-info {
-    padding-top: 0;
-  }
-
   .contact-link-box {
     display: flex;
     flex-direction: column;
@@ -114,7 +69,13 @@
     width: 100%;
     max-width: 150px;
     margin: 0 1rem 0 1rem;
-    border: solid 2px #f9f8f8;
+    border: solid 2px var(--clr-light);
     border-radius: 8px;
+    transition: 400ms all ease-in-out;
+  }
+
+  .contact-link-box:hover {
+    border-color: var(--clr-brand);
+    transition: 150ms all ease-in-out;
   }
 }

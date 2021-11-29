@@ -1,14 +1,6 @@
 .bottom-link {
   position: absolute;
-  bottom: 0;
-  padding-bottom: 0.5rem;
+  bottom: min(1em, 20px);
   display: grid;
   justify-self: center;
-  /* transition: 300ms ease-in-out; */
 }
-/* 
-.bottom-link:hover,
-.bottom-link:focus {
-  color: var(--clr-brand);
-  transition: 300ms ease-in-out;
-} */

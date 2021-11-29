@@ -12,6 +12,10 @@ export default function Header() {
     window.addEventListener('resize', () => {
       return window.innerWidth >= breakpoint && open ? setOpen(false) : null
     })
+
+    window.addEventListener('scroll', () => {
+      return setOpen(false)
+    })
   }, [open])
 
   const handleClick = () => {

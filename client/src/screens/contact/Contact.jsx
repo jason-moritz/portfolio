@@ -1,5 +1,3 @@
-import { HashLink } from 'react-router-hash-link'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import EmailIcon from '@mui/icons-material/Email'
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
 import GitHubIcon from '@mui/icons-material/GitHub'

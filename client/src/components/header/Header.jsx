@@ -6,16 +6,17 @@ import './Header.css'
 export default function Header() {
   // const [width, setWidth] = useState(window.innerWidth)
   const [open, setOpen] = useState(false)
-  const [disable, setDisable] = useState(false)
   const breakpoint = 1024
 
   useEffect(() => {
-    // const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener('resize', () => {
       return window.innerWidth >= breakpoint && open ? setOpen(false) : null
     })
-    // return () => window.removeEventListener('resize', handleWindowResize)
-  }, [])
+
+    window.addEventListener('scroll', () => {
+      return setOpen(false)
+    })
+  }, [open])
 
   const handleClick = () => {
     setOpen(prevState => (prevState = !prevState))
@@ -68,11 +69,11 @@ export default function Header() {
           <input
             type='checkbox'
             id='nav-toggle'
+            onChange={handleClick}
             checked={open}
             className='nav-toggle'
-            onClick={handleClick}
           />
-          <label for='nav-toggle' className='nav-toggle-label'>
+          <label htmlFor='nav-toggle' className='nav-toggle-label'>
             <span />
           </label>
           <nav>

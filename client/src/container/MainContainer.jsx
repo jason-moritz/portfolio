@@ -12,6 +12,7 @@ export default function MainContainer() {
       {projectsArray.map((project, index) => {
         return (
           <Project
+            key={index}
             id={project.id}
             title={project.title}
             preview={project.preview}

@@ -60,6 +60,7 @@
 
   .welcome-text {
     grid-column: 2/3;
+    overflow: hidden;
   }
 
   .home-links-container {

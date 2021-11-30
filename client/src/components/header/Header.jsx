@@ -6,17 +6,30 @@ import './Header.css'
 export default function Header() {
   // const [width, setWidth] = useState(window.innerWidth)
   const [open, setOpen] = useState(false)
+  const [width, setWidth] = useState(window.innerWidth)
   const breakpoint = 1024
 
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      return window.innerWidth >= breakpoint && open ? setOpen(false) : null
-    })
+  const handleResize = () => {
+    setWidth(window.innerWidth)
+  }
 
-    window.addEventListener('scroll', () => {
-      return setOpen(false)
-    })
-  }, [open])
+  const handleScroll = () => {
+    setOpen(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    window.addEventListener('scroll', handleScroll)
+
+    if (width > breakpoint) {
+      setOpen(false)
+    }
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [width])
 
   const handleClick = () => {
     setOpen(prevState => (prevState = !prevState))

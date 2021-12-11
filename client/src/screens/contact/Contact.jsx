@@ -30,7 +30,7 @@ export default function Contact() {
           <div className='contact-link-box'>
             <a
               className='contact-link'
-              href='https://drive.google.com/file/d/1ptmN3dn_x4QIFODZ430lBElB0xHAc-MJ/view?usp=sharing'
+              href='https://drive.google.com/file/d/1oxmWx1mP91GXZA2-O27AAx4hQzTD5rAw/view?usp=sharing'
               aria-label='resume'
               download
               target='_blank'
